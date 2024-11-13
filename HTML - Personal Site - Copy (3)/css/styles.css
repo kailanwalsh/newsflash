@@ -1,0 +1,659 @@
+#home{
+position: absolute;
+display: flex;
+align-items: left;
+height: 100%;
+width: 100%;
+z-index 5;
+
+}
+
+.button{
+  position: fixed;
+  z-index: 1000;
+  margin-left: auto;
+  display: block;
+}
+
+:root {
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+  z-index: 1
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+
+  )
+}
+
+}
+html {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  background-color: WHITE;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+button {
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: absolute;
+  text-align: center;
+  align-items: flex-start;
+  cursor: pointer;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: transparent;
+  border-image: initial;
+}
+
+.scroll-left {
+ height: 50px;
+ overflow: hidden;
+ position: relative;
+ background: red;
+ color: orange;
+ z-index: 2;
+;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 8s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%);
+ }
+ 100% {
+ transform: translateX(-100%);
+ }
+}
+ .scrolltext {
+   size: 200px;
+ }
+
+}
+.hrmap {
+  position: fixed;
+  margin-top: 1200px;
+  border-style: dotted none none none ;
+  top-width:  100px;
+  width: 100px;
+  color: white;
+  border-width: 10px;
+  margin-left: 1180px;
+}
+
+.modalhr {
+  margin-top: 10px;
+}
+.donatehr {
+  position: fixed;
+  margin-top: 100px;
+  border-style: dotted none none none ;
+  top-width: 200px;
+  width: 100px;
+  color: white;
+  border-width: 10px;
+  margin-left: 1175px;
+}
+.abouthr {
+  position: fixed;
+  margin-top: 100px;
+  border-style: dotted none none none ;
+  top-width:  100px;
+  width: 100px;
+  color: white;
+  border-width: 10px;
+  margin-left: 1175px;
+}
+
+
+h2 {
+  position: fixed;
+  color: white;
+  font-family: sans-serif;
+  font-stretch: expanded;
+  font-size: 45px;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+  display: inline-block;
+  font-family: sans-serif;
+  font-stretch: expanded;
+  text-align: center;
+  width: 5em;
+}
+
+.donatepara {
+  position: fixed;
+  justify-content: center;
+  margin-left: 1070px;
+  margin-top: 100px;
+  width: 20em;
+}
+
+.name {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 100%;
+  width: 100%;
+
+}
+
+.homelogo {
+  position: absolute;
+  width: 11em;
+  font-size: 100px;
+  top: 70px;
+  margin-left: 720px;
+  font-family: 'Cinzel Decorative', cursive;
+
+}
+
+.donatelogo{
+  top: 100px;
+  width: 5em;
+  margin-left: 1000px;
+  font-size: 100px;
+  font-family: 'Cinzel Decorative', cursive;
+  width: 5em;
+}
+
+.globe {
+  position: fixed;
+margin-top: 400px;
+margin-left: 990px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#containermovbg {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.itemmovbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.containerhomebuttons {
+  z-index: 1px;
+  display: flex;
+  position: fixed;
+  width: 99.5%;
+  height: 95%;
+  align-content: center;
+  justify-content: center;
+}
+.containermapbuttons {
+  z-index: 1px;
+  display: flex;
+  position: fixed;
+  width: 96%;
+  height: 95%;
+  align-content: center;
+  justify-content: center;
+}
+.containeraboutbuttons {
+  z-index: 1px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.aboutmapbutton {
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+
+}
+.abouthomebutton{
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+}
+.aboutdonatebutton{
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+}
+
+.aboutbutton {
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+.homebutton {
+  width: 10em;
+  margin-top: 1100px;
+  align-items: center;
+}
+.mapaboutbutton {
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1100px;
+}
+
+.donatebutton {
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1000px;
+}
+
+.containerdonatebuttons {
+  z-index: 1px;
+  display: flex;
+  position: fixed;
+  width: 99.4%;
+  height: 90%;
+  margin-top: 4px;
+  align-content: center;
+  justify-content: center;
+}
+
+.donatemapbutton {
+
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.donatehomebutton{
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.donateaboutbutton{
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.mapdonatebutton {
+  margin-top: 1100px;
+}
+
+.mapbutton {
+  margin-top: 1000px;
+  width: 10em;
+  align-items: center;
+  justify-content: center;
+}
+
+.containermap {
+  position: fixed;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.persongrow {
+  transition: all .2s ease-in-out;
+
+}
+.persongrow:hover {
+  transform: rotate(360deg) scale(2);
+  color: rgba(255, 255, 255, 1);
+  shadow: 0 5px 15px rgba(145, 92, 182, .8);
+  fill: black;
+  transition: 1s;
+
+}
+
+#person1 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 80%;
+  top: 80%;
+}
+
+.person1line {
+  margin-left: 650px;
+  margin-top: 320px;
+  stroke-dasharray: 100;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+#person2 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 80%;
+  top: 10%;
+}
+
+#person3 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 90%;
+  top: 65%;
+}
+
+#person4 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 30%;
+  top: 50%;
+}
+
+#person5 {
+  z-index: 0;
+  position: absolute;
+
+  left: 70%;
+  top: 40%;
+}
+
+#person6 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 40%;
+  top: 10%;
+}
+
+#person7 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 30%;
+  top: 85%;
+}
+
+#person8 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 10%;
+  top: 60%;
+}
+
+#person9 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 30%;
+  top: 20%;
+}
+#person10 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 6%;
+  top: 40%;
+}
+#person11 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 20%;
+  top: 20%;
+}
+#person12 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 80%;
+  top: 50%;
+}
+#person13 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 40%;
+  top: 60%;
+}
+#person14 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 55%;
+  top: 70%;
+}
+#person15 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 55%;
+  top: 25%;
+}
+#person16 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 60%;
+  top: 50%;
+}
+#person17 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 70%;
+  top: 80%;
+}
+#person18 {
+  z-index: 0;
+  position: absolute;
+  align-items: flex-start;
+  left: 20%;
+  top: 90%;
+}
+.modal1 {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #FF0000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal1content {
+  background-color: #FF0000;
+  top: 10%;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  z-index: 1pt;
+  justify-content: center;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.dialogue {
+max-width: 4em;
+  text-align: left;
+}
+
+/* close button */
+
+.close {
+  position: relative;
+  color: white;
+  float: left;
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+.donatelogocontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+  margin-left: 110px;
+}
+
+.aboutlogocontainer {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  margin-top: 400px;
+  margin-left: 990px;
+  font-family: 'Cinzel Decorative', cursive;
+  width: 5em;
+}
+
+.cofs {
+  justify-content: center;
+  width: 30em;
+}
+
+.cofs2 {
+  width: 30em;
+}
+
+.cofs3 {
+  width: 30em;
+}
+
+
+.aboutdialogue {
+  position: fixed;
+  margin-top: 700px;
+  margin-left: 1000px;
+  width: 30em;
+
+}
+
+.scrollvid {
+  position: fixed;
+  z-index: 1;
+
+}
+
+#grad1 {
+  z-index: 0;
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
+}
